@@ -34,11 +34,23 @@ class Platillo:
         print(f"{self.__id} | {self.__nombre} | {self.__descripcion} | $ {self.__precio} | {self.__categoria} | Ingredientes: {self.__ingredientes}")
     def mostrar_ingredientes(self):
         if self.__ingredientes:
-            for ingrediente in self.__ingredientes:
-                print(ingrediente)
+            print(self.__ingredientes)
         else:
             print("No hay ingredientes para mostrar")
     def aplicar_descuento(self, porcentaje):
         descuento = self.__precio * (porcentaje/100)
         precio_final = self.__precio - descuento
         return precio_final
+
+platillo1 = Platillo(1, "Flan napolitano", "Flan casero bañado en caramelo", 70, "Postre")
+platillo2 = Platillo(2, "Hamburguesa BBQ Bacon", "Hamburguesa de res con tocino y salsa BBQ", 185, "Plato fuerte", ["pan brioche", "carne de res 200g", "tocino", "queso cheddar", "cebolla caramelizada", "salsa BBQ"])
+
+# Método mostrar_ingredientes
+platillo1.mostrar_ingredientes()
+platillo2.mostrar_ingredientes()
+# Método aplicar_descuento
+print(f"El precio ya con descuento es: {platillo1.aplicar_descuento(50)}")
+print(f"El precio ya con descuento es: {platillo2.aplicar_descuento(20)}")
+# Método info
+platillo1.info()
+platillo2.info()
