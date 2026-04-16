@@ -38,3 +38,7 @@ class Platillo:
                 print(ingrediente)
         else:
             print("No hay ingredientes para mostrar")
+    def aplicar_descuento(self, porcentaje):
+        descuento = self.__precio * (porcentaje/100)
+        precio_final = self.__precio - descuento
+        return precio_final
