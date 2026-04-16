@@ -32,3 +32,9 @@ class Platillo:
         self.__ingredientes = nuevos_ingredientes
     def info(self):
         print(f"{self.__id} | {self.__nombre} | {self.__descripcion} | $ {self.__precio} | {self.__categoria} | Ingredientes: {self.__ingredientes}")
+    def mostrar_ingredientes(self):
+        if self.__ingredientes:
+            for ingrediente in self.__ingredientes:
+                print(ingrediente)
+        else:
+            print("No hay ingredientes para mostrar")
