@@ -18,3 +18,15 @@ class Platillo:
         return self.__categoria
     def get_ingredientes(self):
         return self.__ingredientes
+    def set_id(self, nuevo_id):
+        self.__id = nuevo_id
+    def set_nombre(self, nuevo_nombre):
+        self.__nombre = nuevo_nombre
+    def set_descripcion(self, nueva_descripcion):
+        self.__descripcion = nueva_descripcion
+    def set_precio(self, nuevo_precio):
+        self.__precio = nuevo_precio
+    def set_categoria(self, nueva_categoria):
+        self.__categoria = nueva_categoria
+    def set_ingredientes(self, nuevos_ingredientes):
+        self.__ingredientes = nuevos_ingredientes
