@@ -30,3 +30,5 @@ class Platillo:
         self.__categoria = nueva_categoria
     def set_ingredientes(self, nuevos_ingredientes):
         self.__ingredientes = nuevos_ingredientes
+    def info(self):
+        print(f"{self.__id} | {self.__nombre} | {self.__descripcion} | $ {self.__precio} | {self.__categoria} | Ingredientes: {self.__ingredientes}")
