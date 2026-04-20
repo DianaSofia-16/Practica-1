@@ -54,3 +54,9 @@ print(f"El precio ya con descuento es: {platillo2.aplicar_descuento(20)}")
 # Método info
 platillo1.info()
 platillo2.info()
+# Método get_descripción
+print(platillo1.get_descripcion())
+# Método set_precio
+platillo2.set_precio(190)
+# Método get_precio
+print(f"Nuevo precio de {platillo2.get_nombre()}: {platillo2.get_precio()}")
